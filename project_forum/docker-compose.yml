@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:15
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: ilya
+      POSTGRES_PASSWORD: forum_1412
+      POSTGRES_DB: db_forum_project
+    ports:
+      - "8289:5432"
+    restart: always
